@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScreenBreak — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #ff9e33;
+      --border: #e5e5e5;
+      --code-bg: #f5f5f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f12;
+        --text: #f0f0f0;
+        --muted: #aaa;
+        --border: #2a2a2e;
+        --code-bg: #1a1a1e;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+    p, ul, ol {
+      margin-bottom: 12px;
+    }
+    ul, ol {
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .lang-switch a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .lang-switch a:hover {
+      text-decoration: underline;
+    }
+    a {
+      color: var(--accent);
+    }
+    address {
+      font-style: normal;
+      background: var(--code-bg);
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 8px 0 16px;
+    }
+    .toc {
+      background: var(--code-bg);
+      padding: 16px 22px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+    .toc h3 {
+      margin-top: 0;
+      color: var(--text);
+    }
+    .toc ol {
+      margin-bottom: 0;
+    }
+    .highlight-box {
+      background: var(--code-bg);
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="privacy-policy.html">🇩🇪 Deutsch</a> · 🇬🇧 English
+</div>
+
+<h1>🔒 ScreenBreak — Privacy Policy</h1>
+<p class="meta">Last updated: May 2026 · Version 2.1</p>
+
+<div class="toc">
+  <h3>Contents</h3>
+  <ol>
+    <li><a href="#controller">Data Controller</a></li>
+    <li><a href="#data-overview">What data does ScreenBreak collect?</a></li>
+    <li><a href="#legal-basis">Legal basis for processing</a></li>
+    <li><a href="#accessibility">Accessibility Service</a></li>
+    <li><a href="#permissions">Other permissions</a></li>
+    <li><a href="#storage">Data storage and retention</a></li>
+    <li><a href="#third-parties">Third-party services and data transfer to the USA</a></li>
+    <li><a href="#children">Children and Family Protection</a></li>
+    <li><a href="#rights">Your rights</a></li>
+    <li><a href="#changes">Changes to this Privacy Policy</a></li>
+    <li><a href="#contact">Contact and right to lodge a complaint</a></li>
+  </ol>
+</div>
+
+<h2 id="controller">1. Data Controller</h2>
+<address>
+Roman Gähwiler<br>
+Chemin des Champs-Meunier 13c<br>
+1052 Le Mont-sur-Lausanne<br>
+Switzerland<br>
+E-mail: <a href="mailto:romanscreenbreak@gmail.com">romanscreenbreak@gmail.com</a>
+</address>
+
+<h2 id="data-overview">2. What data does ScreenBreak collect?</h2>
+
+<p>ScreenBreak is built around the principle of data minimization. Virtually all data stays on your device.</p>
+
+<h3>Stored locally on your device</h3>
+<ul>
+  <li>Usage time of monitored apps (minutes per day)</li>
+  <li>Workout statistics (number and type of exercises)</li>
+  <li>Settings (selected apps, time limits, mode)</li>
+  <li>PIN (stored in encrypted form, only in Family Protection mode)</li>
+  <li>7-day history of usage statistics</li>
+  <li>Optional: e-mail address for PIN recovery (stored locally only)</li>
+</ul>
+
+<h3>Transmitted to external servers</h3>
+<p>Data leaves your device in <strong>one single case only</strong>:</p>
+<div class="highlight-box">
+  <strong>PIN recovery:</strong> If you actively use the PIN recovery feature in Family Protection mode, your e-mail address is transmitted to our Firebase Cloud Function (Google Cloud, us-central1 region / USA). The Cloud Function generates an e-mail containing a one-time reset code and delivers it to your address via Gmail SMTP. The e-mail address is not stored in any database and is not used for any other purpose.
+</div>
+
+<h3>Processed but NOT stored</h3>
+<p>For the blocking feature and the dashboard to work, the app must briefly process the following information in memory:</p>
+<ul>
+  <li><strong>Foreground app:</strong> Detected in real time to enforce time limits. Only the package name (e.g. <code>com.instagram.android</code>) is read — never app content.</li>
+  <li><strong>Browser URLs (domain only):</strong> When browser-bypass protection is enabled, the domain of the currently visited page (e.g. <code>youtube.com</code>) is read in real time to enforce the block. URLs are not logged, stored, or transmitted.</li>
+</ul>
+
+<h3>Data NOT collected</h3>
+<ul>
+  <li>No location data</li>
+  <li>No contacts or call logs</li>
+  <li>No content of monitored apps (messages, photos, videos, input)</li>
+  <li>No browsing history and no full URLs</li>
+  <li>No keystrokes</li>
+  <li>No analytics, no crash reporting, no trackers</li>
+  <li>No advertising IDs</li>
+  <li>No sharing with third parties (except the services described in section 7)</li>
+</ul>
+
+<h2 id="legal-basis">3. Legal basis for processing</h2>
+
+<p>Processing of your data is based on the following legal grounds under the Swiss Federal Act on Data Protection (revFADP) and the EU General Data Protection Regulation (GDPR):</p>
+
+<ul>
+  <li><strong>Local data processing (app blocking, dashboard, workouts):</strong> Performance of the user agreement — Art. 6(1)(b) GDPR. The app cannot deliver its core functionality without this processing.</li>
+  <li><strong>PIN recovery by e-mail:</strong> Consent — Art. 6(1)(a) GDPR. You actively trigger this process and can cancel it at any time.</li>
+  <li><strong>PRO subscription handling:</strong> Performance of a contract between you and Google Play — Art. 6(1)(b) GDPR. Payment data is processed exclusively by Google, not by ScreenBreak.</li>
+</ul>
+
+<h2 id="accessibility">4. Accessibility Service</h2>
+
+<p>ScreenBreak relies on the Android Accessibility Service as its core technology. It is used <strong>exclusively</strong> for the following purposes:</p>
+
+<ul>
+  <li><strong>Foreground-app detection:</strong> Determining which app is currently in the foreground, in order to count usage time and enforce time limits.</li>
+  <li><strong>Browser URL detection:</strong> Detecting the domain in supported browsers (Chrome, Samsung Internet) to prevent browser bypass when a blocked app is also accessible via the web (e.g. youtube.com).</li>
+</ul>
+
+<p>The Accessibility Service is <strong>not</strong> used to:</p>
+<ul>
+  <li>Read, store, or transmit screen content</li>
+  <li>Record keystrokes</li>
+  <li>Collect or forward personal data</li>
+  <li>Perform actions on behalf of the user</li>
+  <li>Enable advertising or tracking</li>
+</ul>
+
+<p>You can disable the Accessibility Service at any time in your Android settings. The app will then no longer function.</p>
+
+<h2 id="permissions">5. Other permissions</h2>
+
+<p>ScreenBreak uses the following additional Android permissions, strictly for the purposes listed:</p>
+
+<ul>
+  <li><strong>PACKAGE_USAGE_STATS</strong> (Usage Access): Provided by the Android system to populate the dashboard with daily usage data. Data does not leave the device.</li>
+  <li><strong>SYSTEM_ALERT_WINDOW</strong> (Display over other apps): Used to display the block overlay on top of the blocked app.</li>
+  <li><strong>FOREGROUND_SERVICE</strong>: Keeps the blocking service reliably active even when the system terminates background processes.</li>
+  <li><strong>RECEIVE_BOOT_COMPLETED</strong>: Restarts the blocking service automatically after a device reboot.</li>
+  <li><strong>BIND_DEVICE_ADMIN</strong> (Device Admin, optional): Can be enabled only in Family Protection mode. Prevents uninstallation of the app without the PIN. No other Device Admin capabilities are used.</li>
+  <li><strong>com.android.vending.BILLING</strong> (Google Play Billing): Used exclusively for the optional PRO subscription processed via Google Play. Payment data is processed entirely by Google — ScreenBreak has no access to it.</li>
+  <li><strong>INTERNET</strong>: Required only when you actively use PIN recovery and for Google Play Billing queries. Not used for analytics or tracking.</li>
+</ul>
+
+<h2 id="storage">6. Data storage and retention</h2>
+
+<p>All local data is stored in the Android system's SharedPreferences and is accessible only to the app itself. No cloud backups of usage data are created.</p>
+
+<p><strong>Retention periods:</strong></p>
+<ul>
+  <li><strong>Local data:</strong> Retained until you actively delete it (via app settings) or uninstall the app. Uninstalling the app permanently removes all data.</li>
+  <li><strong>E-mail address for PIN recovery:</strong> The Cloud Function does not store your e-mail address in any database. It is used only to send the reset e-mail via Gmail SMTP and is then discarded. In error cases (e.g. an invalid address), the e-mail address may appear in Google Cloud Logging's technical system logs for up to 30 days, after which it is automatically deleted.</li>
+  <li><strong>Sent e-mails:</strong> A copy of the reset e-mail remains in the sender mailbox (hosted by Google Mail) in accordance with Gmail's standard retention policies.</li>
+  <li><strong>Usage history:</strong> Maximum of 7 days retroactively; older entries are automatically replaced by new ones.</li>
+</ul>
+
+<h2 id="third-parties">7. Third-party services and data transfer to the USA</h2>
+
+<h3>Firebase Cloud Functions (Google LLC)</h3>
+<p>For PIN recovery, we use a Firebase Cloud Function provided by Google. When you actively trigger this feature:</p>
+<ul>
+  <li>Your e-mail address is transmitted to the Cloud Function</li>
+  <li>The Cloud Function runs in the <strong>us-central1 region (Iowa, USA)</strong></li>
+  <li>This means: your e-mail address is temporarily transferred to and processed in the USA</li>
+  <li>Google is certified as a recipient under the EU–US Data Privacy Framework</li>
+  <li>Legal basis: your consent (Art. 6(1)(a), Art. 49(1)(a) GDPR)</li>
+</ul>
+
+<h3>Gmail SMTP (Google LLC)</h3>
+<p>The actual e-mail delivery is handled via Gmail SMTP. This means:</p>
+<ul>
+  <li>Your e-mail address is passed from the Cloud Function to Gmail SMTP so that the reset e-mail can be delivered</li>
+  <li>Google acts as the e-mail provider, comparable to any other mail-sending service</li>
+  <li>Delivery is handled by Google's mail infrastructure in the USA</li>
+  <li>Legal basis: your consent (Art. 6(1)(a) GDPR)</li>
+</ul>
+
+<p>Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> applies in addition.</p>
+
+<h3>Google Play Billing (Google LLC)</h3>
+<p>The optional PRO subscription is processed via Google Play Billing. Payment and account data is handled exclusively by Google; ScreenBreak has no access to your payment methods. Google's Privacy Policy applies.</p>
+
+<h2 id="children">8. Children and Family Protection</h2>
+
+<p>ScreenBreak is intended for users aged 13 and over. The app is not designed for children under 13.</p>
+
+<p>In Family Protection mode, ScreenBreak allows parents to manage their children's screen time. In this mode:</p>
+<ul>
+  <li>No additional personal data about the child is collected</li>
+  <li>All data is stored locally on the device</li>
+  <li>Only the PIN holder (the parent) has access to the settings</li>
+</ul>
+<p>Responsibility for age-appropriate configuration and for safeguarding children's privacy lies with the parents or legal guardians.</p>
+
+<h2 id="rights">9. Your rights</h2>
+
+<p>Under Swiss revFADP and EU GDPR, you have the following rights:</p>
+<ul>
+  <li><strong>Access</strong> to the data processed about you</li>
+  <li><strong>Rectification</strong> of inaccurate data</li>
+  <li><strong>Erasure</strong> of your data (can be done at any time by uninstalling the app)</li>
+  <li><strong>Restriction</strong> of processing</li>
+  <li><strong>Data portability</strong></li>
+  <li><strong>Withdrawal of consent</strong> with effect for the future</li>
+  <li><strong>Objection</strong> to the processing</li>
+</ul>
+
+<p>In practice, you can at any time:</p>
+<ul>
+  <li>Uninstall the app — this removes all local data</li>
+  <li>Disable the Accessibility Service in your Android settings</li>
+  <li>Disable Device Admin (if active) in your Android settings</li>
+  <li>Request information by contacting <a href="mailto:romanscreenbreak@gmail.com">romanscreenbreak@gmail.com</a></li>
+</ul>
+
+<h2 id="changes">10. Changes to this Privacy Policy</h2>
+
+<p>We reserve the right to adapt this Privacy Policy in response to feature changes or legal requirements. For material changes, we will notify you within the app. The current version is always available at this URL.</p>
+
+<h2 id="contact">11. Contact and right to lodge a complaint</h2>
+
+<p>For data protection inquiries or to exercise your rights, please contact:</p>
+<address>
+Roman Gähwiler<br>
+E-mail: <a href="mailto:romanscreenbreak@gmail.com">romanscreenbreak@gmail.com</a>
+</address>
+
+<p><strong>Right to lodge a complaint:</strong> You have the right to lodge a complaint with a data protection supervisory authority, in particular:</p>
+<ul>
+  <li><strong>Switzerland:</strong> Federal Data Protection and Information Commissioner (FDPIC), Feldeggweg 1, 3003 Bern, <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a></li>
+  <li><strong>EU:</strong> Your national data protection authority based on your place of residence</li>
+</ul>
+
+</body>
+</html>

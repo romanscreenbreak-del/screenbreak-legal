@@ -1,92 +1,319 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScreenBreak — Datenschutzerklärung</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; color: #333; line-height: 1.7; }
-        h1 { color: #7C5CFC; font-size: 24px; }
-        h2 { color: #444; font-size: 18px; margin-top: 32px; }
-        p, li { font-size: 15px; }
-        .updated { color: #888; font-size: 13px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScreenBreak — Datenschutzerklärung</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #ff9e33;
+      --border: #e5e5e5;
+      --code-bg: #f5f5f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f12;
+        --text: #f0f0f0;
+        --muted: #aaa;
+        --border: #2a2a2e;
+        --code-bg: #1a1a1e;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+    p, ul, ol {
+      margin-bottom: 12px;
+    }
+    ul, ol {
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .lang-switch a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .lang-switch a:hover {
+      text-decoration: underline;
+    }
+    a {
+      color: var(--accent);
+    }
+    address {
+      font-style: normal;
+      background: var(--code-bg);
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 8px 0 16px;
+    }
+    .toc {
+      background: var(--code-bg);
+      padding: 16px 22px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+    .toc h3 {
+      margin-top: 0;
+      color: var(--text);
+    }
+    .toc ol {
+      margin-bottom: 0;
+    }
+    .highlight-box {
+      background: var(--code-bg);
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 12px 0;
+    }
+  </style>
 </head>
 <body>
-    <h1>🔒 ScreenBreak — Datenschutzerklärung</h1>
-    <p class="updated">Letzte Aktualisierung: April 2026</p>
 
-    <h2>1. Verantwortlicher</h2>
-    <p>Roman Gähwiler<br>Chemin des Champs-Meunier 13c<br>1052 Le Mont-sur-Lausanne, Schweiz<br>Kontakt: romanscreenbreak@gmail.com</p>
+<div class="lang-switch">
+  🇩🇪 Deutsch · <a href="privacy-policy-en.html">🇬🇧 English</a>
+</div>
 
-    <h2>2. Welche Daten erhebt ScreenBreak?</h2>
-    <p>ScreenBreak wurde nach dem Prinzip der Datensparsamkeit entwickelt. Alle Nutzungsdaten werden ausschliesslich lokal auf deinem Gerät gespeichert.</p>
-    <p><strong>Lokal gespeicherte Daten (nur auf deinem Gerät):</strong></p>
-    <ul>
-        <li>Nutzungszeiten der überwachten Apps (Minuten pro Tag)</li>
-        <li>Workout-Statistiken (Anzahl, Art der Übung)</li>
-        <li>Einstellungen (gewählte Apps, Zeitlimits, Modus)</li>
-        <li>PIN (verschlüsselt, nur im Familienschutz-Modus)</li>
-        <li>7-Tage-Verlauf der Nutzungsstatistiken</li>
-    </ul>
-    <p><strong>An Server übermittelte Daten:</strong></p>
-    <ul>
-        <li>E-Mail-Adresse — nur wenn du die PIN-Wiederherstellungsfunktion nutzt. Die E-Mail wird ausschliesslich zum Versand des Reset-Codes verwendet und nicht gespeichert.</li>
-    </ul>
-    <p><strong>Nicht erhobene Daten:</strong></p>
-    <ul>
-        <li>Keine Standortdaten</li>
-        <li>Keine Kontakte oder Anruflisten</li>
-        <li>Keine Inhalte der überwachten Apps (Nachrichten, Fotos, Videos)</li>
-        <li>Keine Browsing-Historie (nur Domain-Erkennung zum Zweck der App-Blockierung)</li>
-        <li>Keine Weitergabe an Dritte</li>
-        <li>Keine Werbung oder Tracking</li>
-    </ul>
+<h1>🔒 ScreenBreak — Datenschutzerklärung</h1>
+<p class="meta">Letzte Aktualisierung: Mai 2026 · Version 2.1</p>
 
-    <h2>3. Accessibility Service</h2>
-    <p>ScreenBreak nutzt den Android Accessibility Service ausschliesslich für folgende Zwecke:</p>
-    <ul>
-        <li><strong>App-Erkennung:</strong> Erkennen welche App im Vordergrund ist, um die Nutzungszeit zu zählen und Zeitlimits durchzusetzen.</li>
-        <li><strong>Browser-URL-Erkennung:</strong> Erkennen ob eine überwachte Website (z.B. youtube.com) im Browser geöffnet wird, um Browser-Umgehung zu verhindern.</li>
-    </ul>
-    <p>Der Accessibility Service wird NICHT verwendet um:</p>
-    <ul>
-        <li>Bildschirminhalte zu lesen oder zu speichern</li>
-        <li>Tastatureingaben aufzuzeichnen</li>
-        <li>Persönliche Daten zu sammeln oder weiterzuleiten</li>
-        <li>Aktionen im Namen des Nutzers auszuführen</li>
-    </ul>
+<div class="toc">
+  <h3>Inhalt</h3>
+  <ol>
+    <li><a href="#verantwortlicher">Verantwortlicher</a></li>
+    <li><a href="#datenuebersicht">Welche Daten erhebt ScreenBreak?</a></li>
+    <li><a href="#rechtsgrundlagen">Rechtsgrundlagen der Verarbeitung</a></li>
+    <li><a href="#accessibility">Accessibility Service</a></li>
+    <li><a href="#permissions">Weitere Berechtigungen</a></li>
+    <li><a href="#speicherung">Datenspeicherung und Aufbewahrung</a></li>
+    <li><a href="#drittanbieter">Drittanbieter-Dienste und Datenübermittlung in die USA</a></li>
+    <li><a href="#kinder">Kinder und Familienschutz</a></li>
+    <li><a href="#rechte">Deine Rechte</a></li>
+    <li><a href="#aenderungen">Änderungen dieser Datenschutzerklärung</a></li>
+    <li><a href="#kontakt">Kontakt und Beschwerderecht</a></li>
+  </ol>
+</div>
 
-    <h2>4. Device Admin</h2>
-    <p>Im Familienschutz-Modus kann optional der Geräteadministrator aktiviert werden. Dieser wird ausschliesslich dafür verwendet, die Deinstallation der App ohne PIN-Eingabe zu verhindern. Es werden keine weiteren Geräteadmin-Rechte genutzt.</p>
+<h2 id="verantwortlicher">1. Verantwortlicher</h2>
+<address>
+Roman Gähwiler<br>
+Chemin des Champs-Meunier 13c<br>
+1052 Le Mont-sur-Lausanne<br>
+Schweiz<br>
+E-Mail: <a href="mailto:romanscreenbreak@gmail.com">romanscreenbreak@gmail.com</a>
+</address>
 
-    <h2>5. Datenspeicherung</h2>
-    <p>Alle Nutzungsdaten werden lokal in den SharedPreferences des Android-Systems gespeichert. Bei Deinstallation der App werden alle Daten automatisch gelöscht. Es werden keine Cloud-Backups der Nutzungsdaten erstellt.</p>
+<h2 id="datenuebersicht">2. Welche Daten erhebt ScreenBreak?</h2>
 
-    <h2>6. Drittanbieter-Dienste</h2>
-    <p><strong>Firebase Cloud Functions (Google):</strong> Wird ausschliesslich für den Versand von PIN-Wiederherstellungs-E-Mails verwendet. Dabei wird nur die eingegebene E-Mail-Adresse temporär verarbeitet und nicht gespeichert. Es gelten die <a href="https://policies.google.com/privacy">Datenschutzrichtlinien von Google</a>.</p>
+<p>ScreenBreak wurde nach dem Prinzip der Datensparsamkeit entwickelt. Praktisch alle Daten bleiben auf deinem Gerät.</p>
 
-    <h2>7. Kinder und Familienschutz</h2>
-    <p>ScreenBreak bietet einen Familienschutz-Modus, der es Eltern ermöglicht, die Bildschirmzeit ihrer Kinder zu verwalten. In diesem Modus:</p>
-    <ul>
-        <li>Werden keine zusätzlichen Daten über das Kind erhoben</li>
-        <li>Werden alle Daten lokal gespeichert</li>
-        <li>Hat nur der PIN-Inhaber (Elternteil) Zugriff auf die Einstellungen</li>
-    </ul>
+<h3>Lokal auf deinem Gerät gespeichert</h3>
+<ul>
+  <li>Nutzungszeiten der überwachten Apps (Minuten pro Tag)</li>
+  <li>Workout-Statistiken (Anzahl und Art der Übungen)</li>
+  <li>Einstellungen (ausgewählte Apps, Zeitlimits, Modus)</li>
+  <li>PIN (verschlüsselt gespeichert, nur im Familienschutz-Modus)</li>
+  <li>7-Tage-Verlauf der Nutzungsstatistiken</li>
+  <li>Optional: E-Mail-Adresse zur PIN-Wiederherstellung (nur lokal abgelegt)</li>
+</ul>
 
-    <h2>8. Deine Rechte</h2>
-    <p>Du hast jederzeit das Recht:</p>
-    <ul>
-        <li>Die App und damit alle lokalen Daten zu löschen (Deinstallation)</li>
-        <li>Den Accessibility Service in den Android-Einstellungen zu deaktivieren</li>
-        <li>Den Geräteadministrator in den Android-Einstellungen zu deaktivieren</li>
-        <li>Auskunft über die gespeicherten Daten zu verlangen (Kontakt: romanscreenbreak@gmail.com)</li>
-    </ul>
+<h3>An externe Server übermittelt</h3>
+<p>Daten verlassen dein Gerät nur in <strong>einem einzigen Fall</strong>:</p>
+<div class="highlight-box">
+  <strong>PIN-Wiederherstellung:</strong> Wenn du im Familienschutz-Modus die PIN-Wiederherstellung aktiv nutzt, wird deine E-Mail-Adresse an unsere Firebase Cloud Function (Google Cloud, Region us-central1 / USA) übermittelt. Die Cloud Function generiert eine E-Mail mit einem einmaligen Reset-Code und versendet diese über Gmail SMTP an deine Adresse. Die E-Mail-Adresse wird weder in einer Datenbank gespeichert noch zu anderen Zwecken weiterverwendet.
+</div>
 
-    <h2>9. Änderungen</h2>
-    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen. Bei wesentlichen Änderungen informieren wir dich über ein App-Update.</p>
+<h3>Verarbeitet, aber NICHT gespeichert</h3>
+<p>Damit die Blockierfunktion und das Dashboard funktionieren, muss die App folgende Informationen kurzzeitig im Arbeitsspeicher verarbeiten:</p>
+<ul>
+  <li><strong>Aktive App im Vordergrund:</strong> Wird in Echtzeit erkannt, um Zeitlimits durchzusetzen. Nur der Paketname (z.B. <code>com.instagram.android</code>) wird ausgewertet — keine App-Inhalte.</li>
+  <li><strong>Browser-URLs (nur Domain):</strong> Bei aktivem Browser-Bypass-Schutz wird die aufgerufene Domain (z.B. <code>youtube.com</code>) in Echtzeit gelesen, um den Block durchzusetzen. URLs werden weder protokolliert noch gespeichert noch übertragen.</li>
+</ul>
 
-    <h2>10. Kontakt</h2>
-    <p>Bei Fragen zum Datenschutz: romanscreenbreak@gmail.com</p>
+<h3>Daten, die NICHT erhoben werden</h3>
+<ul>
+  <li>Keine Standortdaten</li>
+  <li>Keine Kontakte oder Anruflisten</li>
+  <li>Keine Inhalte der überwachten Apps (Nachrichten, Fotos, Videos, Eingaben)</li>
+  <li>Keine Browsing-Historie und keine vollständigen URLs</li>
+  <li>Keine Tastatureingaben</li>
+  <li>Keine Analytics, kein Crash-Reporting, keine Tracker</li>
+  <li>Keine Werbe-IDs</li>
+  <li>Keine Weitergabe an Dritte (mit Ausnahme der unter Punkt 7 beschriebenen Dienste)</li>
+</ul>
+
+<h2 id="rechtsgrundlagen">3. Rechtsgrundlagen der Verarbeitung</h2>
+
+<p>Die Verarbeitung deiner Daten stützt sich auf folgende Rechtsgrundlagen gemäss Schweizer Datenschutzgesetz (revDSG) und EU-Datenschutz-Grundverordnung (DSGVO):</p>
+
+<ul>
+  <li><strong>Lokale Datenverarbeitung (App-Blockierung, Dashboard, Workouts):</strong> Erfüllung des Nutzungsvertrags — Art. 6 Abs. 1 lit. b DSGVO. Die App kann ihre Kernfunktion ohne diese Verarbeitung nicht erbringen.</li>
+  <li><strong>PIN-Wiederherstellung via E-Mail:</strong> Einwilligung — Art. 6 Abs. 1 lit. a DSGVO. Du startest diesen Vorgang aktiv und kannst ihn jederzeit abbrechen.</li>
+  <li><strong>PRO-Abonnement-Abwicklung:</strong> Erfüllung eines Vertrags zwischen dir und Google Play — Art. 6 Abs. 1 lit. b DSGVO. Die Zahlungsdaten werden ausschliesslich durch Google verarbeitet, nicht durch ScreenBreak.</li>
+</ul>
+
+<h2 id="accessibility">4. Accessibility Service</h2>
+
+<p>ScreenBreak benötigt den Android Accessibility Service als Kerntechnologie. Dieser wird <strong>ausschliesslich</strong> für folgende Zwecke verwendet:</p>
+
+<ul>
+  <li><strong>App-Erkennung:</strong> Welche App aktuell im Vordergrund läuft, um Nutzungszeit zu zählen und Zeitlimits durchzusetzen.</li>
+  <li><strong>Browser-URL-Erkennung:</strong> Domain-Erkennung in unterstützten Browsern (Chrome, Samsung Internet), um Browser-Bypass zu verhindern, wenn eine blockierte App auch im Web aufrufbar ist (z.B. youtube.com).</li>
+</ul>
+
+<p>Der Accessibility Service wird <strong>nicht</strong> verwendet, um:</p>
+<ul>
+  <li>Bildschirminhalte zu lesen, zu speichern oder zu übertragen</li>
+  <li>Tastatureingaben aufzuzeichnen</li>
+  <li>Persönliche Daten zu sammeln oder weiterzuleiten</li>
+  <li>Aktionen im Namen des Nutzers auszuführen</li>
+  <li>Werbung oder Tracking zu ermöglichen</li>
+</ul>
+
+<p>Du kannst den Accessibility Service jederzeit in den Android-Einstellungen deaktivieren. Die App funktioniert dann nicht mehr.</p>
+
+<h2 id="permissions">5. Weitere Berechtigungen</h2>
+
+<p>ScreenBreak nutzt zusätzlich folgende Android-Berechtigungen, ausschliesslich zu den genannten Zwecken:</p>
+
+<ul>
+  <li><strong>PACKAGE_USAGE_STATS</strong> (Nutzungsstatistik-Zugriff): Wird vom Android-System bereitgestellt, um das Dashboard mit den täglichen Nutzungszeiten zu befüllen. Die Daten verlassen das Gerät nicht.</li>
+  <li><strong>SYSTEM_ALERT_WINDOW</strong> (Über anderen Apps anzeigen): Wird verwendet, um die Block-Oberfläche über der gesperrten App einzublenden.</li>
+  <li><strong>FOREGROUND_SERVICE</strong> (Vordergrund-Dienst): Hält den Blockierdienst zuverlässig aktiv, auch wenn das System Hintergrundprozesse beendet.</li>
+  <li><strong>RECEIVE_BOOT_COMPLETED</strong> (Beim Geräte-Start ausführen): Startet den Blockierdienst nach einem Geräteneustart automatisch wieder.</li>
+  <li><strong>BIND_DEVICE_ADMIN</strong> (Geräteadministrator, optional): Nur im Familienschutz-Modus aktivierbar. Verhindert die Deinstallation der App ohne PIN. Keine weiteren Geräteadmin-Funktionen werden genutzt.</li>
+  <li><strong>com.android.vending.BILLING</strong> (Google Play Billing): Wird ausschliesslich für die optionale PRO-Abonnement-Abwicklung über Google Play verwendet. Zahlungsdaten werden vollständig von Google verarbeitet — ScreenBreak hat keinen Zugriff darauf.</li>
+  <li><strong>INTERNET</strong> (Netzwerkzugriff): Nur bei aktiver Nutzung der PIN-Wiederherstellung und der Google-Play-Billing-Abfrage erforderlich. Nicht für Analytics oder Tracking.</li>
+</ul>
+
+<h2 id="speicherung">6. Datenspeicherung und Aufbewahrung</h2>
+
+<p>Alle lokalen Daten werden in den SharedPreferences des Android-Systems gespeichert und sind nur für die App selbst zugänglich. Es werden keine Cloud-Backups der Nutzungsdaten erstellt.</p>
+
+<p><strong>Aufbewahrungsdauer:</strong></p>
+<ul>
+  <li><strong>Lokale Daten:</strong> Werden gespeichert, bis du sie aktiv löschst (über die App-Einstellungen) oder die App deinstallierst. Bei Deinstallation werden sämtliche Daten unwiederbringlich gelöscht.</li>
+  <li><strong>E-Mail-Adresse bei PIN-Recovery:</strong> Die Cloud Function speichert die E-Mail-Adresse nicht in einer Datenbank. Sie wird ausschliesslich zum Versand der Reset-E-Mail über Gmail SMTP verwendet und anschliessend verworfen. Im Fehlerfall (z.B. ungültige Adresse) kann die E-Mail-Adresse für maximal 30 Tage in den technischen System-Logs von Google Cloud Logging erscheinen und wird danach automatisch gelöscht.</li>
+  <li><strong>Versendete E-Mails:</strong> Eine Kopie der Reset-E-Mail verbleibt im Absender-Postfach (gehostet bei Google Mail) gemäss den Standard-Speicherrichtlinien von Gmail.</li>
+  <li><strong>Nutzungsverlauf:</strong> Maximal 7 Tage rückwirkend, danach werden ältere Einträge automatisch durch neue ersetzt.</li>
+</ul>
+
+<h2 id="drittanbieter">7. Drittanbieter-Dienste und Datenübermittlung in die USA</h2>
+
+<h3>Firebase Cloud Functions (Google LLC)</h3>
+<p>Für die PIN-Wiederherstellung nutzen wir eine Firebase Cloud Function von Google. Wenn du diese Funktion aktiv auslöst:</p>
+<ul>
+  <li>Wird deine E-Mail-Adresse an die Cloud Function übermittelt</li>
+  <li>Die Cloud Function wird in der Region <strong>us-central1 (Iowa, USA)</strong> betrieben</li>
+  <li>Das bedeutet: Deine E-Mail-Adresse wird kurzzeitig in die USA übermittelt und dort verarbeitet</li>
+  <li>Google ist als Empfänger nach dem EU-US Data Privacy Framework zertifiziert</li>
+  <li>Rechtsgrundlage: Deine Einwilligung (Art. 6 Abs. 1 lit. a, Art. 49 Abs. 1 lit. a DSGVO)</li>
+</ul>
+
+<h3>Gmail SMTP (Google LLC)</h3>
+<p>Der eigentliche E-Mail-Versand erfolgt über Gmail SMTP. Das bedeutet:</p>
+<ul>
+  <li>Deine E-Mail-Adresse wird von der Cloud Function an Gmail SMTP weitergegeben, damit die Reset-Mail zugestellt werden kann</li>
+  <li>Google fungiert dabei als E-Mail-Provider, vergleichbar mit jedem anderen Mail-Versand</li>
+  <li>Die Zustellung erfolgt über Googles Mail-Infrastruktur in den USA</li>
+  <li>Rechtsgrundlage: Deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</li>
+</ul>
+
+<p>Es gelten ergänzend die <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzbestimmungen von Google</a>.</p>
+
+<h3>Google Play Billing (Google LLC)</h3>
+<p>Das optionale PRO-Abonnement wird über Google Play Billing abgewickelt. Zahlungs- und Account-Daten werden ausschliesslich von Google verarbeitet; ScreenBreak hat keinen Zugriff auf deine Zahlungsmittel. Es gelten die Datenschutzbestimmungen von Google.</p>
+
+<h2 id="kinder">8. Kinder und Familienschutz</h2>
+
+<p>ScreenBreak richtet sich an Nutzer ab 13 Jahren. Die App ist nicht für Kinder unter 13 Jahren bestimmt.</p>
+
+<p>Im Familienschutz-Modus ermöglicht ScreenBreak Eltern, die Bildschirmzeit ihrer Kinder zu verwalten. In diesem Modus:</p>
+<ul>
+  <li>Werden keine zusätzlichen personenbezogenen Daten über das Kind erhoben</li>
+  <li>Werden alle Daten lokal auf dem Gerät gespeichert</li>
+  <li>Hat nur der PIN-Inhaber (Elternteil) Zugriff auf die Einstellungen</li>
+</ul>
+<p>Die Verantwortung für die altersgerechte Konfiguration und die Wahrung der Privatsphäre der Kinder liegt bei den Eltern oder Erziehungsberechtigten.</p>
+
+<h2 id="rechte">9. Deine Rechte</h2>
+
+<p>Nach Schweizer revDSG und EU-DSGVO hast du folgende Rechte:</p>
+<ul>
+  <li><strong>Auskunft</strong> über die zu deiner Person verarbeiteten Daten</li>
+  <li><strong>Berichtigung</strong> unrichtiger Daten</li>
+  <li><strong>Löschung</strong> deiner Daten (durch Deinstallation der App jederzeit selbst möglich)</li>
+  <li><strong>Einschränkung</strong> der Verarbeitung</li>
+  <li><strong>Datenübertragbarkeit</strong></li>
+  <li><strong>Widerruf einer erteilten Einwilligung</strong> mit Wirkung für die Zukunft</li>
+  <li><strong>Widerspruch</strong> gegen die Verarbeitung</li>
+</ul>
+
+<p>Praktisch kannst du jederzeit selbst:</p>
+<ul>
+  <li>Die App deinstallieren — sämtliche lokalen Daten werden dadurch gelöscht</li>
+  <li>Den Accessibility Service in den Android-Einstellungen deaktivieren</li>
+  <li>Den Geräteadministrator (sofern aktiviert) in den Android-Einstellungen deaktivieren</li>
+  <li>Auskunft anfordern unter <a href="mailto:romanscreenbreak@gmail.com">romanscreenbreak@gmail.com</a></li>
+</ul>
+
+<h2 id="aenderungen">10. Änderungen dieser Datenschutzerklärung</h2>
+
+<p>Wir behalten uns vor, diese Datenschutzerklärung an geänderte Funktionen oder rechtliche Anforderungen anzupassen. Bei wesentlichen Änderungen weisen wir innerhalb der App auf das Update hin. Die jeweils aktuelle Fassung ist stets unter dieser URL abrufbar.</p>
+
+<h2 id="kontakt">11. Kontakt und Beschwerderecht</h2>
+
+<p>Bei Fragen zum Datenschutz oder zur Geltendmachung deiner Rechte erreichst du uns unter:</p>
+<address>
+Roman Gähwiler<br>
+E-Mail: <a href="mailto:romanscreenbreak@gmail.com">romanscreenbreak@gmail.com</a>
+</address>
+
+<p><strong>Beschwerderecht:</strong> Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere:</p>
+<ul>
+  <li><strong>Schweiz:</strong> Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB), Feldeggweg 1, 3003 Bern, <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a></li>
+  <li><strong>EU:</strong> Bei der für deinen Wohnsitz zuständigen nationalen Datenschutzbehörde</li>
+</ul>
+
 </body>
 </html>
